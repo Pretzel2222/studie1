@@ -1,0 +1,104 @@
+
+ul 
+{ /*listen med fanene */
+    list-style-type: none; /*fjerner kulepunktene så du ikke får de prikkene som er default på lister*/
+    margin: 0; 
+    padding: 0; /* Setter margin og padding lik 0 for å fjerne nettleser default*/
+    overflow: hidden; /* Dette er hvis elementene blir for store i dette topbaren f.eks. på en mobilenhet så klipper den teksten så den ikke går utenfor "boksen" sin */
+    background-color:#333; /* Setter bakgrunnsfargen på navbaren til å være svart*/
+  }
+  
+  li 
+  { /*listen ->  listepunktene */
+    float: left;
+  } /* Dette gjør at de forskjellige meny punktene, altså hjem, livet mitt osv flyter til venstre på siden og hvis det hadde ligget tekst i nærheten så hadde det pakket seg rundt dette */
+  
+  li a, .nedbtn 
+  { 
+    display: inline-block; /*Denne lar meg spesifisere padding, men den kan også la meg spesifisere margin, height, width osv*/
+    color: white; /*Setter teksten til hvit */
+    text-align: center; /* midstiller teksten */
+    padding: 14px 16px; /* lager mellomrom mellem hvert listepunkt/link */
+    text-decoration: none; /*fjerner streken under linkene */
+  }
+  
+  li a:hover, .nedtrekk:hover .nedbtn 
+  {
+    background-color:red;
+  } /*går inn i listen -> linkene -> når du holder musepekeren over -> endrer bakgrunnsfarge til rød på alle du holder musepekeren over */
+  
+  li a.active {background-color:orange;} /* Går inn i listen -> listepunktene -> linkene -> når den ene er aktiv/trykket på så er bakgrunnsfargen oransje */
+
+  li.nedtrekk 
+  {
+    display: inline-block;
+  } /*Dette gjør at alle linkene i nedtrekksmenyen tar opp så mye breddet som mulig og tilatter at andre elementer kan legge seg på samme linje/under den når det ikke er plass*/
+  .nedtrekk-innhold
+  {
+    display: none; /* dette gjør at div-boksen blir usynlig. Dette gjelder da (fase 1, fase 2 osv) */
+    position: absolute; /*Gjør at nedtrekks innholdet (fase 1, fase 2 osv) blir plassert i forhold til hverandre */
+    background-color: #f9f9f9; /*Setter bakgrunsfargen til #f9f9f9 (lys gråfarge)*/
+    min-width: 160px;  /*Denne angir en minimumsbredde på 160px for div-elementene (altså boksene) */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*Dette legger til et skyggeffekt til elementet. 
+    Skyggen er definert slik: horisontal forskyvning (0), vertikal forsyvning (8px), spredning (16px) og fargen på skyggen (rgba(0,0,0,0,2)*/
+    z-index: 1; /* Denne bestemmer elementets stablingsrekkefølge i forhold til andre elementer på siden. Elementer med høyere z-indeks vil bli tegnet over elementer med lavere z-indeks*/
+  }
+  .nedtrekk-innhold a /* linkene i nedtrekksmenyene*/
+  {
+    color: black; /*setter teksten til å være svart */
+    padding: 12px 16px; /* denne setter mellomrommet rundt innholdet både vertikalt (12px) og horisontalt (16px) */
+    text-decoration: none; /*fjerner streken under linkene som er default */
+    display: block; /* Oppfører seg som ett blokkelement når det gjelder høyde og plassering i forhold til foreldrelementet (nedtrekksmenyen) */
+    text-align: left; /*Setter teksten til å være venstre stilt */
+  }
+  .nedtrekk-innhold a:hover /*Når du holder musepekeren over linkene i nedtrekksmenyen */
+  {
+    background-color:red; /*Setter bakgrunnsafargen til å være rød*/
+  }
+  .nedtrekk:hover .nedtrekk-innhold { /*Når du holder musepekeren over for menyelementene (f. eks. webutvikling og UX)*/
+    display: block; /* dette gjør at når du holder musepekeren over nedtrekksmenyen så blir de andre elemetene synlig (fase 1, fase 2 for eks) */
+  }
+  
+  
+  @media only screen and (max-width: 600px) 
+  { 
+    ul {
+      display: block;
+    }
+    li {
+      float: none;
+    }
+    li a, .nedbtn, li.nedtrekk {
+      display: block;
+      width: 100%;
+      /* Legg til 100% bredde for å fylle hele skjermens bredde */
+    }
+    .nedtrekk-innhold {
+      position: static;
+      /* Fjern absolutt posisjonering for å la elementene strømme naturlig */
+      display: block;
+    }
+
+  } /*Denne gjør at navbaren legger seg vertikalt i stedet for horizontalt hvis skjermstørrelsen er mindre enn 600 px */
+
+  /* Medieforespørsel for tablettskjermer (for eksempel 768px bredde eller mer) */
+@media only screen and (min-width: 600px) and (max-width:768px)
+{ 
+  ul {
+    display: block;
+  }
+  li {
+    float: none;
+  }
+  li a, .nedbtn, li.nedtrekk {
+    display: block;
+    width: 100%;
+    /* Legg til 100% bredde for å fylle hele skjermens bredde */
+  }
+  .nedtrekk-innhold {
+    position: static;
+    /* Fjern absolutt posisjonering for å la elementene strømme naturlig */
+    display: block;
+    background-color: #333;
+  }
+}
