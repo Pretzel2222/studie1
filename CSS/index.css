@@ -1,3 +1,21 @@
+.content { /* tekstbokser */
+  max-width: 800px;
+  margin-left: 50px;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255); 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 1, 1); /* shygge */
+  text-align: center; /* sentrering av tekst */
+}
+
+.content h1 {
+  color: #333; /* header tekst farge */
+}
+
+.content p {
+  color: #555; /* paragraf tekst farge */
+}
 
 ul 
 { /*listen med fanene */
