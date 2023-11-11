@@ -17,6 +17,15 @@
   color: #555; /* paragraf tekst farge */
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(105deg, rgb(202, 146, 34),#333 60%);
+  background-attachment: fixed;
+}
+
+
 ul 
 { /*listen med fanene */
     list-style-type: none; /*fjerner kulepunktene så du ikke får de prikkene som er default på lister*/
