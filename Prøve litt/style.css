@@ -14,10 +14,12 @@ header, .main-content, .topnav {
 header {
     background-color: #333;
     color: #fff;
-    padding: 40px ;
-    margin: 100px;
+    padding: 20px ;
+    margin: 100px auto;
     text-align: center;
     border-radius: 5px;
+    min-width: 1000px;
+
 }
 
 .topnav {
@@ -100,8 +102,8 @@ header {
 
 /* Oppdatert stil for tekstinnhold */
 .main-content {
-    max-width: 1500px; /* Begrens bredden */
-    margin: 0 auto; /* Senter innholdet */
+    max-width: 1000px; /* Begrens bredden */
+    margin: 100px auto; /* Senter innholdet */
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -116,18 +118,29 @@ header {
 
 /* Mobile First Media Query */
 @media (max-width: 768px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
+    .topnav li:not(:first-child), .dropdown .dropbtn{
         display: none;
     }
+    header{
+        min-width: 400px;
+        padding: 20px;
+        margin: 50px auto;
+    }
+    .topnav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .topnav.responsive li{
+        display: block;
+    }
     .topnav a.icon {
-        float: right;
+        float: left;
+        order: -1;
         display: block;
     }
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+        float:left;
     }
     .topnav.responsive a {
         float: none;
@@ -142,25 +155,36 @@ header {
         text-align: left;
     }
     .main-content {
-        max-width: 500px;
-        margin: 0 auto;
+        max-width: 400px;
+        margin: 50px auto;
     }
 }
 
 /* Tablet Styles */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
+    .topnav li:not(:first-child), .dropdown .dropbtn{
         display: none;
     }
+    header{
+        min-width: 700px;
+        padding: 20px;
+        margin: 50px auto;
+    }
+    .topnav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .topnav.responsive li{
+        display: block;
+    }
     .topnav a.icon {
-        float: right;
+        float: left;
+        order: -1;
         display: block;
     }
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+        float:left;
     }
     .topnav.responsive a {
         float: none;
