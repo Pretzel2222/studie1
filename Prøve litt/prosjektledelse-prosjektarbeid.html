@@ -1,78 +1,86 @@
-<!DOCTYPE html>
-<html lang="no">
+<!DOCTYPE html> <!-- Deklarerer HTML5-dokumenttype -->
+<html lang="no"> <!-- Definerer HTML-dokumentet med språk 'no' (norsk) -->
 <head>
-    <title>Prosjektledelse og Prosjektarbeid</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Prosjektledelse og Prosjektarbeid</title> <!-- Tittel på dokumentet -->
+    <meta charset="UTF-8"> <!-- Tegnsettet for UTF-8 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Lenke til Font Awesome for ikoner -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Lenke til et eksternt stilark kalt 'style.css' -->
 </head>
 
-<style> body {
-    background-image: url(bilder/dev2.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position: relative;
-}</style>
+<style>
+    body {
+        background-image: url(bilder/dev2.jpg); /* Bakgrunnsbilde for nettsiden */
+        background-size: 100% 100%; /* Bakgrunnsbildets størrelse */
+        background-repeat: no-repeat; /* Hindrer gjentakelse av bakgrunnsbildet */
+        position: relative; /* Definerer bakgrunnens posisjon som relativ */
+    }
+</style>
+
 <body>
     
-    <nav class="topnav" id="myTopnav">
-        <ul>
-            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
-            <li><a href="index.html">Hjem</a></li>
-            <li><a href="prosjektledelse-prosjektarbeid.html" class="active">Prosjektledelse og prosjektarbeid</a></li>
+    <nav class="topnav" id="myTopnav"> <!-- Navigasjonsmeny med class 'topnav' og ID 'myTopnav' -->
+        <ul> <!-- Uordnet liste -->
+            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li> <!-- Liste-element med et ikon for responsivt menyvalg -->
+            <li><a href="index.html">Hjem</a></li> <!-- Liste-element med lenke til 'index.html' -->
+            <li><a href="prosjektledelse-prosjektarbeid.html" class="active">Prosjektledelse og prosjektarbeid</a></li> <!-- Aktivt liste-element for denne siden i navigasjonsmenyen -->
+            <!-- Nedtrekksmeny for 'Systemutvikling' -->
             <li class="dropdown">
-                <button class="dropbtn">Systemutvikling
-                    <i class="fa fa-caret-down"></i>
+                <button class="dropbtn">Systemutvikling <!-- Knapp som utløser nedtrekksmenyen -->
+                    <i class="fa fa-caret-down"></i> <!-- Ikon for nedtrekksmeny -->
                 </button>
-                <div class="dropdown-content">
+                <div class="dropdown-content"> <!-- Innholdet i nedtrekksmenyen -->
                     <a href="systemutvikling.html">Systemutvikling</a>
                     <a href="tradisjonelle-metoder.html">Tradisjonelle metoder</a>
                     <a href="agile-smidige-funksjoner.html">Agile/smidige funksjoner</a>
                 </div>
             </li>
+            <!-- Nedtrekksmeny for 'Webutvikling og UX' -->
             <li class="dropdown">
-                <button class="dropbtn">Webutvikling og UX
-                    <i class="fa fa-caret-down"></i>
+                <button class="dropbtn">Webutvikling og UX <!-- Knapp som utløser nedtrekksmenyen -->
+                    <i class="fa fa-caret-down"></i> <!-- Ikon for nedtrekksmeny -->
                 </button>
-                <div class="dropdown-content">
+                <div class="dropdown-content"> <!-- Innholdet i nedtrekksmenyen -->
                     <a href="webutvikling-ux.html">Webutvikling og UX</a>
                     <a href="fase1.html">Fase 1</a>
                     <a href="fase2.html">Fase 2</a>
                     <a href="fase3.html">Fase 3</a>
                 </div>
             </li>
-            <li><a href="kilder.html">Kilder</a></li>
+            <li><a href="kilder.html">Kilder</a></li> <!-- Liste-element med lenke til 'kilder.html' -->
             
         </ul>
     </nav>
+
     <header>
-        <h1>Hjem</h1>
-        </header>
-    <div class="main-content">
+        <h1>Hjem</h1> <!-- Overskrift 1 innenfor header-seksjonen -->
+    </header>
+
+    <div class="main-content"> <!-- Hovedinnholdet -->
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec sapien eu justo facilisis eleifend. Proin lacinia ut nunc non convallis. Integer sit amet risus elit. Sed quis mi ut urna laoreet egestas id ut tortor. Fusce ac vehicula felis. Sed ut mi aliquam, tempus odio in, posuere urna. Curabitur nec metus metus.
         </p>
     </div>
-    <button><a href="systemutvikling.html"> Les mer her! </a></button>
-    
 
     <footer>
         <ul>
-            <li><a href="https://twitter.com/cs_pretzel">Twitter</a></li>
-            <li><a href="mailto:265360@usn.no">Email</a></li>
-            <li><a href="https://Usn.no">Usn</a></li>
+            <li><a href="https://twitter.com/cs_pretzel">Twitter</a></li> <!-- Liste-element med lenke til Twitter -->
+            <li><a href="mailto:265360@usn.no">Email</a></li> <!-- Liste-element med e-postlenke -->
+            <li><a href="https://Usn.no">Usn</a></li> <!-- Liste-element med lenke til 'Usn.no' -->
         </ul>
     </footer>
+
     <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
+    function myFunction() { // Funksjon for å gjøre navigasjonsmenyen responsiv
+        var x = document.getElementById("myTopnav"); // Henter navigasjonsmenyen med ID 'myTopnav'
+
+        // Sjekker om navigasjonsmenyen har klassenavnet 'topnav'
+        if (x.className === "topnav") {
+            x.className += " responsive"; // Legger til klassenavnet 'responsive' for å gjøre menyen responsiv
+        } else {
+            x.className = "topnav"; // Tilbakestiller klassenavnet til 'topnav' for å fjerne responsiviteten
+        }
     }
     </script>
     
-    </body>
+</body>
 </html>
