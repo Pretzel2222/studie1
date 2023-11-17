@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Times New Roman', sans-serif;/* Setter fonten for hele dokumentet */
   }
 /* Basisstiler for nettsiden */
 
 body {
-    font-family: 'Arial', sans-serif; /* Setter fonten for hele dokumentet */
     margin: 0; /* Fjerner standardmarginer */
     background-color: #f0f0f0; /* Setter bakgrunnsfarge for hele siden */
     display: flex; /* Bruker Flexbox for layout */
@@ -30,6 +29,7 @@ header {
     background: transparent; /* Gjennomsiktig bakgrunn for header */
     animation: back 20s linear infinite;
     white-space: nowrap;
+    
 }
 /*Animert header start*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
@@ -361,5 +361,8 @@ footer li a {
     color:#fff;
 }
 
+h2{
+    line-height: 2em;
+}
 
 

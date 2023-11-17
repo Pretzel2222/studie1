@@ -5,7 +5,8 @@
     <meta charset="UTF-8"> <!-- Tegnsettet for UTF-8 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Lenke til Font Awesome for ikoner -->
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Lenke til en ekstern stilark kalt 'style.css' -->
-    <style> body {
+    <style> 
+    body {
         background-image: url(bilder/fase1.jpg); /* Setter bakgrunnsbildet til 'fase1.jpg' fra mappen 'bilder' */
         background-size: 100% 100%; /* Angir størrelsen på bakgrunnsbildet til 100% av bredden og høyden */
         background-repeat: no-repeat; /* Forhindrer gjentakelse av bakgrunnsbildet */
@@ -24,34 +25,38 @@
            
     }.content h2 {
         transform: translate(-63%, -50%); /* Stiller på overskriftene både horisontalt og vertikalt */
-  
-}
-p {
-    position: absolute; /* Angir absolutt posisjonering for elementet */
-    bottom: 100px; /* Plasserer elementet 500 piksler fra bunnen av forfedrene med relativ posisjonering */
-    font-size: 40px; /* Størrelse på teksten */
-    font-weight: 600; /* Angir vekten (tykkelsen) på teksten */
-}
-
-h3 {
-    position: absolute; /* Angir absolutt posisjonering for elementet */
-    bottom: -100px; /* Plasserer elementet 100 piksler over bunnen av forfedrene med relativ posisjonering */
-    font-size: 30px; /* Størrelse på teksten */
-    font-weight: 500; /* Angir vekten (tykkelsen) på teksten */
-}
-
-#btn {
-    padding: 1rem 2.5rem; /* Angir padding (polstring) for knappelementet */
-    font-size: 1rem; /* Størrelse på teksten */
-    border: none; /* Fjerner kantlinjen rundt elementet */
-    color: white; /* Angir teksten til hvit farge */
-    background: #000; /* Angir bakgrunnsfargen til svart */
-    cursor: pointer; /* Endrer musemarkøren til en hånd når det er over elementet */
-    border-radius: 50px; /* Gir elementet avrundede hjørner */
-    position: absolute; /* Angir absolutt posisjonering for elementet */
-    bottom: 8%; /* Plasserer elementet 8% fra bunnen av forfedrene med relativ posisjonering */
-}
-
+    }
+    p {
+        position: absolute; /* Angir absolutt posisjonering for elementet */
+        bottom: 100px; /* Plasserer elementet 500 piksler fra bunnen av forfedrene med relativ posisjonering */
+        font-size: 40px; /* Størrelse på teksten */
+        font-weight: 600; /* Angir vekten (tykkelsen) på teksten */
+    }
+    h3 {
+        position: absolute; /* Angir absolutt posisjonering for elementet */
+        bottom: -70px; /* Plasserer elementet 100 piksler over bunnen av forfedrene med relativ posisjonering */
+        font-size: 30px; /* Størrelse på teksten */
+        font-weight: 500; /* Angir vekten (tykkelsen) på teksten */
+    }
+    #btn {
+        padding: 1rem 2.5rem; /* Angir padding (polstring) for knappelementet */
+        font-size: 1rem; /* Størrelse på teksten */
+        border: none; /* Fjerner kantlinjen rundt elementet */
+        color: #00FF00; /* Angir teksten til hvit farge */
+        background: #000; /* Angir bakgrunnsfargen til svart */
+        cursor: pointer; /* Endrer musemarkøren til en hånd når det er over elementet */
+        border-radius: 50px; /* Gir elementet avrundede hjørner */ 
+        position: absolute; /* Angir absolutt posisjonering for elementet */
+        bottom: 30%; /* Plasserer elementet 8% fra bunnen av forfedrene med relativ posisjonering */
+    }
+    #txt{
+        position: fixed;
+        bottom: 450px;
+        font-size: 20px;
+    }
+    .content h2:nth-child(1) {
+        -webkit-text-stroke: 2px #FFF; /* Legger til en kantlinje rundt teksten */
+    }
 
 
     </style>
@@ -98,14 +103,13 @@ h3 {
                 <h2>Web- og Systemutvikling </h2> <!-- Overskriftsnivå 2 -->
                 <h2>Web- og Systemutvikling</h2> <!-- En annen overskriftsnivå 2-->
         </div> <!-- Avslutning av 'content'-diven -->
-        <h3>SEMESTEROPPGAVE</h3>
-
-        <p></p>
+        <h3>SEMESTEROPPGAVE GRUPPE 1</h3>
+        <p id="txt">Velkommen til gruppe 1 sin semesteroppgave. På vår nettside kan du lese om web og systemutvikling</p>
         </header>
     
 
-    <form style="display: inline;" action="systemutvikling.html" method="get"> <!-- Skjema for 'Les mer her!'-knappen -->
-        <button id="btn"> Les mer her! </button> <!-- Knapp innenfor skjemaet -->
+    <form style="display: inline;" action="prosjektledelse-prosjektarbeid.html" method="get"> <!-- Skjema for 'Les mer her!'-knappen -->
+        <button id="btn"> Trykk for å starte lesingen! </button> <!-- Knapp innenfor skjemaet -->
     </form>
 
     <footer> <!-- Åpningstag for dokumentets bunntekst -->
