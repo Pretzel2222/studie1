@@ -20,23 +20,27 @@
 
     header{
         position: absolute; /* Angir absolutt posisjonering */
-        bottom: 500px; /* Plasserer innholdet 500px fra bunnen av forfedrene med relativ posisjonering */
+        top: 300px; /* Plasserer innholdet 500px fra bunnen av forfedrene med relativ posisjonering */
+        margin: 50px auto;
         
            
     }.content h2 {
-        transform: translate(-63%, -50%); /* Stiller på overskriftene både horisontalt og vertikalt */
+        transform: translate(-90%, -42%); /* Stiller på overskriftene både horisontalt og vertikalt */
     }
     p {
         position: absolute; /* Angir absolutt posisjonering for elementet */
-        bottom: 100px; /* Plasserer elementet 500 piksler fra bunnen av forfedrene med relativ posisjonering */
+        top:-90px; /* Plasserer elementet 500 piksler fra bunnen av forfedrene med relativ posisjonering */
         font-size: 40px; /* Størrelse på teksten */
         font-weight: 600; /* Angir vekten (tykkelsen) på teksten */
+        margin-left: 20px;
     }
     h3 {
         position: absolute; /* Angir absolutt posisjonering for elementet */
         bottom: -70px; /* Plasserer elementet 100 piksler over bunnen av forfedrene med relativ posisjonering */
         font-size: 30px; /* Størrelse på teksten */
         font-weight: 500; /* Angir vekten (tykkelsen) på teksten */
+        top: 80px;
+        margin-left: 20px;
     }
     #btn {
         padding: 1rem 2.5rem; /* Angir padding (polstring) for knappelementet */
@@ -47,18 +51,47 @@
         cursor: pointer; /* Endrer musemarkøren til en hånd når det er over elementet */
         border-radius: 50px; /* Gir elementet avrundede hjørner */ 
         position: absolute; /* Angir absolutt posisjonering for elementet */
-        bottom: 30%; /* Plasserer elementet 8% fra bunnen av forfedrene med relativ posisjonering */
+        top: 60%; /* Plasserer elementet 8% fra bunnen av forfedrene med relativ posisjonering */
     }
     #txt{
         position: fixed;
-        bottom: 450px;
+        top: 500px;
         font-size: 20px;
+        max-width: 400px;
     }
     .content h2:nth-child(1) {
         -webkit-text-stroke: 2px #FFF; /* Legger til en kantlinje rundt teksten */
     }
-
-
+    /*Stil for mobil*/
+    @media (max-width: 768px) {/* Styling for header-elementet på mindre skjermer */
+        header {
+            min-width: 400px; /* Angir minste bredde for header-elementet */
+            padding: 20px; /* Legger til padding rundt header-elementet */
+            margin: 50px auto; /* Sentrerer header-elementet i forhold til bredden på skjermen */
+            top: 300px;
+        }
+    .content h2 {
+        transform: translate(-34%, -50%); /* Stiller på overskriftene både horisontalt og vertikalt */
+    }
+    p,h3{
+        margin-left: 0;
+    }
+    }
+    /* Stil for nettbrettvisning */
+    @media (min-width: 768px) and (max-width: 1023px) {
+         header {
+            min-width: 700px; /* Angir minste bredde for header-elementet */
+            padding: 20px; /* Legger til padding rundt header-elementet */
+            margin: 50px auto; /* Sentrerer header-elementet i forhold til bredden på skjermen */
+            top: 300px;
+            }
+        .content h2 {
+            transform: translate(-62%, -50%); /* Stiller på overskriftene både horisontalt og vertikalt */
+        }
+        p, h3{
+            margin-left: 0;
+        }
+    }
     </style>
 </head>
 
@@ -109,7 +142,7 @@
     
 
     <form style="display: inline;" action="prosjektledelse-prosjektarbeid.html" method="get"> <!-- Skjema for 'Les mer her!'-knappen -->
-        <button id="btn"> Trykk for å starte lesingen! </button> <!-- Knapp innenfor skjemaet -->
+        <button id="btn"> Trykk her for å starte lesingen! </button> <!-- Knapp innenfor skjemaet -->
     </form>
 
     <footer> <!-- Åpningstag for dokumentets bunntekst -->

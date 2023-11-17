@@ -19,7 +19,9 @@ body {
 header, .main-content, .topnav {
     border-radius: 5px; /* Runde hjørner på disse elementene */
 }
-
+h2{
+    line-height: 2em;
+}
 header {
     color: #fff; /* Tekstfargen for header */
     padding: 0px; /* Innpadding for header */
@@ -45,7 +47,7 @@ header {
   
   .content h2 {
     color: #fff; /* Angir tekstfargen for overskriftene */
-    font-size: 4em; /* Setter skriftstørrelsen til 4 em enheter */
+    font-size: 50px; /* Setter skriftstørrelsen til 4 em enheter */
     position: absolute; /* Angir absolutt posisjonering for overskriftene */
     transform: translate(-50%, -100%); /* Sentrerer overskriftene både horisontalt og vertikalt */
   }
@@ -272,7 +274,7 @@ header {
         top: 0;
     }
     .content h2 {
-        font-size: 30px; /* Setter skriftstørrelsen til 4 em enheter */
+        font-size: 50px; /* Setter skriftstørrelsen til 4 em enheter */
     }
 }
 
@@ -378,8 +380,6 @@ footer li a {
     color:#fff;
 }
 
-h2{
-    line-height: 2em;
-}
+
 
 
