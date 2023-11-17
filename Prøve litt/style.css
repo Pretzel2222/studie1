@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     background-color: #f0f0f0;
     display: flex;
@@ -8,21 +13,81 @@ body {
     
 }
 
-header, .main-content, .topnav {
+.main-content, .topnav {
     border-radius: 5px;
 }
 
 header {
-    background-color: #333;
+    background:transparent;
     color: #fff;
     padding: 20px ;
     margin: 100px auto;
     text-align: center;
-    border-radius: 5px;
     min-width: 1000px;
+    animation: back 20s linear infinite;
+    white-space: nowrap;
 
 }
+/*Animert header start*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
+
+.content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 4em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #006400;
+}
+
+.content h2:nth-child(2) {
+  color: #00FF00;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+/*Animert header slutt*/
 .topnav {
     overflow: hidden;
     background-color: red;
