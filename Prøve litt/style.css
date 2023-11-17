@@ -96,7 +96,7 @@ header {
 
 .topnav {
     overflow: hidden; /* Skjuler innhold som er større enn parent container */
-    background-color: #777; /* Bakgrunnsfarge for navigasjonsmeny */
+    background-color: red; /* Bakgrunnsfarge for navigasjonsmeny */
     list-style: none; /* Fjerner punktmarkeringer fra listen */
 }
 
