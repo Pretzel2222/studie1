@@ -10,7 +10,43 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         position: relative;
-    }</style>
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    } /* Kode for å plasere footer nederst på siden og dekke hele bredden*/
+
+    header{
+        position: absolute;
+        bottom: 500px;
+        
+    }
+    p{
+        position: absolute;
+        bottom: 100px;
+        font-size: 40px;
+        font-weight: 600;
+
+    }
+    h3{
+        position: absolute;
+        bottom: -100px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    button {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background: #000;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+
+    </style>
 </head>
 
 <body> <!-- Åpningstag for dokumentets body-seksjon -->
@@ -49,17 +85,14 @@
         </ul>
     </nav>
     <header>
-        <div class="content">
-            <div class="content">
-                <h2>Gruppe 1 - Webutvikling og UX</h2>
-                <h2>Gruppe 1 - Webutvikling og UX</h2>
-            </div>
+        <p>USN</p>
+        <div class="content"> <!-- Åpningstag for en div med klassen 'content' -->
+                <h2>Gruppe 1 - Web- og Systemutvikling </h2> <!-- Overskriftsnivå 2 -->
+                <h2>Gruppe 1 - Web- og Systemutvikling</h2> <!-- En annen overskriftsnivå 2-->
+        </div> <!-- Avslutning av 'content'-diven -->
+        <h3>SEMESTEROPPGAVE</h3>
         </header>
-    <div class="main-content">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec sapien eu justo facilisis eleifend. Proin lacinia ut nunc non convallis. Integer sit amet risus elit. Sed quis mi ut urna laoreet egestas id ut tortor. Fusce ac vehicula felis. Sed ut mi aliquam, tempus odio in, posuere urna. Curabitur nec metus metus.
-        </p>
-    </div>
+    
 
     <form style="display: inline;" action="systemutvikling.html" method="get"> <!-- Skjema for 'Les mer her!'-knappen -->
         <button> Les mer her! </button> <!-- Knapp innenfor skjemaet -->
