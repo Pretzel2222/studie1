@@ -1,38 +1,51 @@
-<!DOCTYPE html>
-<html lang="no">
-<head>
-    <title>Tradisjonelle Metoder - Systemutvikling</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="style.css">
+<!DOCTYPE html> <!-- Deklarasjon av HTML5-dokumenttype -->
+<html lang="no"> <!-- Åpningstag for HTML-dokumentet med språket 'no' (norsk) -->
+<head> <!-- Åpningstag for dokumentets head-seksjon -->
+    <title>Hjem</title> <!-- Tittel på dokumentet -->
+    <meta charset="UTF-8"> <!-- Tegnsettet for UTF-8 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Lenke til Font Awesome for ikoner -->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Lenke til en ekstern stilark kalt 'style.css' -->
+    <style>
+        /* Styler bakgrunnsbildet for hele dokumentet */
+        body {
+            background-image: url(bilder/program.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        </style>
 </head>
 
-<style> body {
-    background-image: url(bilder/program.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position: relative;
-}</style>
+
+
 <body>
+    <!-- Navigasjonsmeny -->
     <nav class="topnav" id="myTopnav">
         <ul>
+            <!-- Hamburger-ikon for mobilvisning -->
             <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
+            <!-- Lenke til hjemmesiden -->
             <li><a href="index.html" >Hjem</a></li>
+            <!-- Lenke til prosjektledelse og prosjektarbeid -->
             <li><a href="prosjektledelse-prosjektarbeid.html">Prosjektledelse og prosjektarbeid</a></li>
+            <!-- Dropdown-meny for Systemutvikling -->
             <li class="dropdown">
                 <button class="dropbtn">Systemutvikling
                     <i class="fa fa-caret-down"></i>
                 </button>
+                <!-- Innhold i dropdown-menyen for Systemutvikling -->
                 <div class="dropdown-content">
                     <a href="systemutvikling.html">Systemutvikling</a>
                     <a href="tradisjonelle-metoder.html" class="active">Tradisjonelle metoder</a>
                     <a href="agile-smidige-funksjoner.html">Agile/smidige funksjoner</a>
                 </div>
             </li>
+            <!-- Dropdown-meny for Webutvikling og UX -->
             <li class="dropdown">
                 <button class="dropbtn">Webutvikling og UX
                     <i class="fa fa-caret-down"></i>
                 </button>
+                <!-- Innhold i dropdown-menyen for Webutvikling og UX -->
                 <div class="dropdown-content">
                     <a href="webutvikling-ux.html">Webutvikling og UX</a>
                     <a href="fase1.html">Fase 1</a>
@@ -40,39 +53,46 @@
                     <a href="fase3.html">Fase 3</a>
                 </div>
             </li>
+            <!-- Lenke til kilder -->
             <li><a href="kilder.html">Kilder</a></li>
-            
         </ul>
     </nav>
+
+    <!-- Overskrift -->
     <header>
         <div class="content">
             <h2>Tradisjonelle Metoder</h2>
             <h2>Tradisjonelle Metoder</h2>
         </div>
-        </header>
+    </header>
+
+    <!-- Hovedinnhold -->
     <div class="main-content">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec sapien eu justo facilisis eleifend. Proin lacinia ut nunc non convallis. Integer sit amet risus elit. Sed quis mi ut urna laoreet egestas id ut tortor. Fusce ac vehicula felis. Sed ut mi aliquam, tempus odio in, posuere urna. Curabitur nec metus metus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec sapien eu justo facilisis eleifend. Proin lacinia ut nunc non convallis. Integer sit amet risus elit. Sed quis mi ut urna laoreet egestas id ut tortor. Fusce ac vehicula felis. Sed ut mi aliquam, tempus odio in, posuere urna. Curabitur nec metus metus.
         </p>
     </div>
 
+    <!-- Bunntekst -->
     <footer>
         <ul>
+            <!-- Lenker til sosiale medier og e-post -->
             <li><a href="https://twitter.com/cs_pretzel">Twitter</a></li>
             <li><a href="mailto:265360@usn.no">Email</a></li>
             <li><a href="https://Usn.no">Usn</a></li>
         </ul>
     </footer>
+
+    <!-- JavaScript for å gjøre navigasjonsmenyen responsiv -->
     <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
     </script>
-    
-    </body>
+</body>
 </html>
