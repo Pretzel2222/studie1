@@ -22,13 +22,15 @@ header, .main-content, .topnav {
 
 header {
     color: #fff; /* Tekstfargen for header */
-    padding: 20px; /* Innpadding for header */
-    margin: 100px auto; /* Senterer header horisontalt */
+    padding: 0px; /* Innpadding for header */
+    margin: 200px auto; /* Senterer header horisontalt */
     text-align: center; /* Sentrerer tekst i header */
     min-width: 1000px; /* Minimumsbredde for header */
     background: transparent; /* Gjennomsiktig bakgrunn for header */
     animation: back 20s linear infinite;
     white-space: nowrap;
+    z-index: 0;
+    position: relative;
     
 }
 /*Animert header start*/
@@ -39,14 +41,13 @@ header {
     position: absolute; /* Angir absolutt posisjonering */
     top: 20%; /* Plasserer innholdet 20% fra toppen av forfedrene med relativ posisjonering */
     left: 50%; /* Plasserer innholdet midt på den horisontale aksen */
-    transform: translate(-50%, -50%); /* Sentrerer innholdet både horisontalt og vertikalt */
   }
   
   .content h2 {
     color: #fff; /* Angir tekstfargen for overskriftene */
     font-size: 4em; /* Setter skriftstørrelsen til 4 em enheter */
     position: absolute; /* Angir absolutt posisjonering for overskriftene */
-    transform: translate(-50%, -50%); /* Sentrerer overskriftene både horisontalt og vertikalt */
+    transform: translate(-50%, -100%); /* Sentrerer overskriftene både horisontalt og vertikalt */
   }
   
   .content h2:nth-child(1) {
@@ -184,12 +185,17 @@ header {
     border-radius: 5px; /* Runding av hjørner */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Legger til skyggeeffekt */
     flex: 1; /* Bruk all tilgjengelig vertikal plass */
+    z-index: 1;
+    position: relative;
+    top: -200px;
 }
 
 /* Definerer stilen for alle <p> elementer innenfor .main-content */
 .main-content p {
     font-size: 16px; /* Angir skriftstørrelsen til 16 piksler */
     line-height: 1.6; /* Setter linjehøyden til 1.6 ganger skriftstørrelsen */
+    margin: 0; /* Sjekk og juster eventuelle marginer på <p> */
+    padding: 0; /* Sjekk og juster eventuelle padding på <p> */
 }
 
 
@@ -208,6 +214,8 @@ header {
         min-width: 400px; /* Angir minste bredde for header-elementet */
         padding: 20px; /* Legger til padding rundt header-elementet */
         margin: 50px auto; /* Sentrerer header-elementet i forhold til bredden på skjermen */
+        top: 100px;
+        
     }
 
     /* Setter display til flex og kolonne-retning for å tilpasse navigasjonselementene vertikalt */
@@ -261,6 +269,10 @@ header {
     .main-content {
         max-width: 400px; /* Begrenser hovedinnholdet til 400 piksler i bredde */
         margin: 50px auto; /* Sentrerer hovedinnholdet */
+        top: 0;
+    }
+    .content h2 {
+        font-size: 30px; /* Setter skriftstørrelsen til 4 em enheter */
     }
 }
 
@@ -276,6 +288,7 @@ header {
         min-width: 700px; /* Angir minste bredde for header-elementet */
         padding: 20px; /* Legger til padding rundt header-elementet */
         margin: 50px auto; /* Sentrerer header-elementet i forhold til bredden på skjermen */
+        top: 50px;
     }
 
     /* Setter display til flex og kolonne-retning for å tilpasse navigasjonselementene vertikalt */
@@ -329,6 +342,10 @@ header {
     .main-content {
         max-width: 700px; /* Begrenser hovedinnholdet til 700 piksler i bredde */
         margin: 0 auto; /* Sentrerer hovedinnholdet */
+        top:0;
+    }
+    .content h2 {
+        font-size: 50px; /* Setter skriftstørrelsen til 4 em enheter */
     }
 }
 
