@@ -1,7 +1,11 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Nullstiller margin for å fjerne eventuelle standardmarginer */
+    padding: 0; /* Nullstiller padding for å fjerne eventuelle standardpaddinger */
+    box-sizing: border-box; /*
+    Bruker border-box-modellen som sikrer at padding og border
+    legges til innenfor den definerte bredden og høyden på et element,
+    og ikke i tillegg til det, for en mer forutsigbar layouthåndtering.
+    */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;/* Setter fonten for hele dokumentet */
   }
@@ -27,14 +31,19 @@ header {
     text-align: center; /* Sentrerer tekst i header */
     min-width: 1000px; /* Minimumsbredde for header */
     background: transparent; /* Gjennomsiktig bakgrunn for header */
-    animation: back 20s linear infinite;
-    white-space: nowrap;
-    z-index: 0;
-    position: relative;
+    animation: back 20s linear infinite; /*
+    Setter animasjonen for dette elementet med navnet 'back',
+    som skal vare i 20 sekunder, ha en lineær tidsfunksjon og
+    gjenta seg uendelig.*/
+    white-space: nowrap;/*
+    Forhindrer at teksten brytes automatisk (word-wrap),
+    og tvinger den til å forbli på en enkelt linje uten å bryte av.*/
+    z-index: 0; /* Setter stakknivået for dette elementet til 0 */
+    position: relative; /* Angir at elementet har relativ posisjonering i forhold til sin opprinnelige plassering */
     
 }
 /*Animert header start*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"); /* Hentet fra alvarotrigo.com se kilder*/
 
 
 .content {
@@ -45,7 +54,7 @@ header {
   
   .content h2 {
     color: #fff; /* Angir tekstfargen for overskriftene */
-    font-size: 50px; /* Setter skriftstørrelsen til 4 em enheter */
+    font-size: 50px; /* Setter skriftstørrelsen til 50 piksler enheter */
     position: absolute; /* Angir absolutt posisjonering for overskriftene */
     transform: translate(-50%, -100%); /* Sentrerer overskriftene både horisontalt og vertikalt */
   }
@@ -116,7 +125,7 @@ header {
 }
 
 .active {
-    background-color: #04AA6D; /* Setter bakgrunnsfarge for hele siden */
+    background-color: #04AA6D; /* Setter bakgrunnsfarge for den aktive siden */
     color: white; /* Endrer teksten til hvit */
 }
 
@@ -185,9 +194,9 @@ header {
     border-radius: 5px; /* Runding av hjørner */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Legger til skyggeeffekt */
     flex: 1; /* Bruk all tilgjengelig vertikal plass */
-    z-index: 1;
-    position: relative;
-    top: -200px;
+    z-index: 1; /* Setter stakknivået for dette elementet til 1 */
+    position: relative; /* Posisjonerer innholdet relativt */
+    top: -200px; /* Plasserer innholdet -200 piksler fra toppen av forfedrene med relativ posisjonering */
 }
 
 /* Definerer stilen for alle <p> elementer innenfor .main-content */
@@ -198,13 +207,13 @@ header {
     padding: 0; /* Sjekk og juster eventuelle padding på <p> */
 }
 img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    display: block; /*Setter elementet som en blokk (display: block) slik at det opptar hele bredden av det tilgjengelige området.*/
+    margin-left: auto; 
+    margin-right: auto;/*Plasserer elementet horisontalt sentrert ved å angi automatisk marginpå venstre og høyre side, noe som gir en sentrert posisjon.*/
+    width: 100%; /* Angir at bildet skal ta opp 100% av bredden til forelder-elementet. */
 }
 ol, ul{
-    padding: 20px;
+    padding: 20px; /* Padding rundt listepunktene */
 }
 /* Stil for footer */
 footer {
@@ -233,8 +242,8 @@ footer li {
 footer li a {
     text-decoration: none; /* Fjerner understrek fra lenker */
     padding: 30px; /* Legger til padding rundt lenker i footer */
-    color:#fff;
-    font-size: 20px
+    color:#fff; /* Farge på lenkene i footer */
+    font-size: 20px; /* Størrelse på teksten i lenkene */ 
 }
 
 
@@ -253,7 +262,7 @@ footer li a {
         min-width: 400px; /* Angir minste bredde for header-elementet */
         padding: 20px; /* Legger til padding rundt header-elementet */
         margin: 50px auto; /* Sentrerer header-elementet i forhold til bredden på skjermen */
-        top: 100px;
+        top: 100px; /* Plasserer innholdet 100 piksler fra toppen av forfedrene med relativ posisjonering */
         
     }
 
@@ -311,10 +320,10 @@ footer li a {
         top: 0;
     }
     .content h2 {
-        font-size: 30px; /* Setter skriftstørrelsen til 50px enheter */
+        font-size: 30px; /* Setter skriftstørrelsen til 30px enheter */
     }
     footer li a {
-        font-size: 40px;
+        font-size: 40px;/* Setter skriftstørrelsen til 40px enheter */
     }
 }
 
@@ -330,7 +339,7 @@ footer li a {
         min-width: 700px; /* Angir minste bredde for header-elementet */
         padding: 20px; /* Legger til padding rundt header-elementet */
         margin: 50px auto; /* Sentrerer header-elementet i forhold til bredden på skjermen */
-        top: 50px;
+        top: 50px; /* Plasserer innholdet 50 piksler fra toppen av forfedrene med relativ posisjonering */
     }
 
     /* Setter display til flex og kolonne-retning for å tilpasse navigasjonselementene vertikalt */
@@ -384,13 +393,13 @@ footer li a {
     .main-content {
         max-width: 700px; /* Begrenser hovedinnholdet til 700 piksler i bredde */
         margin: 50px auto; /* Sentrerer hovedinnholdet */
-        top:0;
+        top:0; /* Plasserer innholdet 0 piksler fra toppen av forfedrene med relativ posisjonering */
     }
     .content h2 {
-        font-size: 50px; /* Setter skriftstørrelsen til 4 em enheter */
+        font-size: 50px; /* Setter skriftstørrelsen til 50 piksler enheter */
     }
     footer li a {
-        font-size: 40px;
+        font-size: 40px; /* Setter skriftstørrelsen til 40 piksler enheter */
     }
 }
 

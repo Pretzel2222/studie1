@@ -5,98 +5,8 @@
     <meta charset="UTF-8"> <!-- Tegnsettet for UTF-8 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Lenke til Font Awesome for ikoner -->
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Lenke til en ekstern stilark kalt 'style.css' -->
+    <link rel="stylesheet" type="text/css" href="index.css"> <!-- Lenke til en ekstern stilark kalt 'style.css' -->
     <style> 
-    body {
-        background-image: url(bilder/fase1.jpg); /* Setter bakgrunnsbildet til 'fase1.jpg' fra mappen 'bilder' */
-        background-size: 100% 100%; /* Angir størrelsen på bakgrunnsbildet til 100% av bredden og høyden */
-        background-repeat: no-repeat; /* Forhindrer gjentakelse av bakgrunnsbildet */
-        position: relative; /* Angir at elementet har relativ posisjonering i forhold til sin opprinnelige plassering */
-    }    
-    footer {
-        position: fixed; /* Angir fixed posisjonering */
-        bottom: 0; /* Plasserer innholdet 0 helt i bunnen */
-        width: 100%; /*Setter bredden til å dekke hele nettsiden*/
-    } /* Kode for å plasere footer nederst på siden og dekke hele bredden*/
-
-    header{
-        position: absolute; /* Angir absolutt posisjonering */
-        top: 300px; /* Plasserer innholdet 500px fra bunnen av forfedrene med relativ posisjonering */
-        margin: 50px auto;
-        z-index: 0;
-        
-           
-    }.content h2 {
-        transform: translate(-84%, -42%); /* Stiller på overskriftene både horisontalt og vertikalt */
-    }
-    p {
-        position: absolute; /* Angir absolutt posisjonering for elementet */
-        top:-90px; /* Plasserer elementet 500 piksler fra bunnen av forfedrene med relativ posisjonering */
-        font-size: 40px; /* Størrelse på teksten */
-        font-weight: 600; /* Angir vekten (tykkelsen) på teksten */
-        margin-left: 20px;
-    }
-    h3 {
-        position: absolute; /* Angir absolutt posisjonering for elementet */
-        bottom: -90px; /* Plasserer elementet 100 piksler over bunnen av forfedrene med relativ posisjonering */
-        font-size: 30px; /* Størrelse på teksten */
-        font-weight: 500; /* Angir vekten (tykkelsen) på teksten */
-        margin-left: 20px;
-    }
-    #btn {
-        padding: 1rem 2.5rem; /* Angir padding (polstring) for knappelementet */
-        font-size: 1rem; /* Størrelse på teksten */
-        border: none; /* Fjerner kantlinjen rundt elementet */
-        color: #FFF; /* Angir teksten til hvit farge */
-        background: #777; /* Angir bakgrunnsfargen til svart */
-        cursor: pointer; /* Endrer musemarkøren til en hånd når det er over elementet */
-        border-radius: 50px; /* Gir elementet avrundede hjørner */ 
-        position: absolute; /* Angir absolutt posisjonering for elementet */
-        top:220px; /* Plasserer elementet 60% fra toppen av forfedrene med relativ posisjonering */
-        margin-left: 20px;
-    }
-    #txt{
-        position: absolute;
-        top:150px;
-        font-size: 20px;
-        max-width: 400px;
-    }
-    .topnav{
-        z-index: 1;
-    }
-    .content h2:nth-child(1) {
-        -webkit-text-stroke: 2px #FFF; /* Legger til en kantlinje rundt teksten */
-    }
-    /*Stil for mobil*/
-    @media (max-width: 768px) {/* Styling for header-elementet på mindre skjermer */
-        header {
-            min-width: 400px; /* Angir minste bredde for header-elementet */
-            padding: 20px; /* Legger til padding rundt header-elementet */
-            margin: 50px auto; /* Sentrerer header-elementet i forhold til bredden på skjermen */
-            top: 300px;
-        }
-        .content h2 {
-            transform: translate(-52%, -50%); /* Stiller på overskriftene både horisontalt og vertikalt */
-        }
-        p,h3,#btn{
-            margin-left: 0;
-        }
-    }
-    /* Stil for nettbrettvisning */
-    @media (min-width: 768px) and (max-width: 1023px) {
-         header {
-            min-width: 700px; /* Angir minste bredde for header-elementet */
-            padding: 20px; /* Legger til padding rundt header-elementet */
-            margin: 50px auto; /* Sentrerer header-elementet i forhold til bredden på skjermen */
-            top: 300px;
-            }
-        .content h2 {
-            transform: translate(-58%, -50%); /* Stiller på overskriftene både horisontalt og vertikalt */
-        }
-        p, h3, #btn{
-            margin-left: 0;
-        }
-        
-    }
     </style>
 </head>
 
@@ -155,7 +65,7 @@
         <ul> <!-- Uordnet liste -->
             <li><a href="https://twitter.com/cs_pretzel">Twitter</a></li> <!-- Liste-element med lenke til Twitter -->
             <li><a href="mailto:265360@usn.no">Email</a></li> <!-- Liste-element med en e-postlenke -->
-            <li><a href="https://Usn.no">Usn</a></li> <!-- Liste-element med lenke til 'Usn.no' -->
+            <li><a href="https://usn.no">Usn</a></li> <!-- Liste-element med lenke til 'Usn.no' -->
         </ul>
     </footer>
 
