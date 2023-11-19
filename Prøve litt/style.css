@@ -52,7 +52,7 @@ header {
   
   .content h2:nth-child(1) {
     color: transparent; /* Gjør den første overskriften gjennomsiktig */
-    -webkit-text-stroke: 2px #006400; /* Legger til en kantlinje rundt teksten */
+    -webkit-text-stroke: 2px #000; /* Legger til en kantlinje rundt teksten */
   }
   
   .content h2:nth-child(2) {
