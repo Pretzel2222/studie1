@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', sans-serif;/* Setter fonten for hele dokumentet */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;/* Setter fonten for hele dokumentet */
   }
 /* Basisstiler for nettsiden */
 
@@ -21,6 +22,7 @@ header, .main-content, .topnav {
 }
 h2{
     line-height: 2em;
+    
 }
 header {
     color: #fff; /* Tekstfargen for header */
@@ -199,6 +201,15 @@ header {
     margin: 0; /* Sjekk og juster eventuelle marginer på <p> */
     padding: 0; /* Sjekk og juster eventuelle padding på <p> */
 }
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+ol, ul{
+    padding: 20px;
+}
 
 
 /* Definisjoner for responsivt design på mindre skjermstørrelser (mobil og nettbrett) */
@@ -274,7 +285,7 @@ header {
         top: 0;
     }
     .content h2 {
-        font-size: 50px; /* Setter skriftstørrelsen til 50px enheter */
+        font-size: 30px; /* Setter skriftstørrelsen til 50px enheter */
     }
 }
 
@@ -343,7 +354,7 @@ header {
     /* Stil for hovedinnholdet på nettbrett */
     .main-content {
         max-width: 700px; /* Begrenser hovedinnholdet til 700 piksler i bredde */
-        margin: 0 auto; /* Sentrerer hovedinnholdet */
+        margin: 50px auto; /* Sentrerer hovedinnholdet */
         top:0;
     }
     .content h2 {
