@@ -206,6 +206,36 @@ img{
 ol, ul{
     padding: 20px;
 }
+/* Stil for footer */
+footer {
+    background-color: #777; /* Bakgrunnsfarge for footer */
+    padding: 10px; /* Padding rundt innhold i footer */
+    text-align: center; /* Sentrerer teksten i footer */
+    position: relative; /* Angir posisjonen til footer */
+    color: white; /* Farge på teksten i footer */
+    display: block; /* Viser footer som et blokk-element */
+}
+
+/* Stil for ul-listen innenfor footer */
+footer ul {
+    padding: 0; /* Fjerner padding for ul-listen */
+    text-align: center; /* Sentrerer teksten i ul-listen */
+}
+
+/* Stil for listeelementer i footer */
+footer li {
+    display: inline-block; /* Viser listeelementer som blokk-elementer ved siden av hverandre */
+    margin-right: 10px; /* Setter avstand mellom hvert listeelement */
+    
+}
+
+/* Stil for lenker i footer */
+footer li a {
+    text-decoration: none; /* Fjerner understrek fra lenker */
+    padding: 30px; /* Legger til padding rundt lenker i footer */
+    color:#fff;
+    font-size: 20px
+}
 
 
 /* Definisjoner for responsivt design på mindre skjermstørrelser (mobil og nettbrett) */
@@ -283,6 +313,9 @@ ol, ul{
     .content h2 {
         font-size: 30px; /* Setter skriftstørrelsen til 50px enheter */
     }
+    footer li a {
+        font-size: 40px;
+    }
 }
 
 /* Stil for nettbrettvisning */
@@ -356,36 +389,12 @@ ol, ul{
     .content h2 {
         font-size: 50px; /* Setter skriftstørrelsen til 4 em enheter */
     }
+    footer li a {
+        font-size: 40px;
+    }
 }
 
-/* Stil for footer */
-footer {
-    background-color: #777; /* Bakgrunnsfarge for footer */
-    padding: 10px; /* Padding rundt innhold i footer */
-    text-align: center; /* Sentrerer teksten i footer */
-    position: relative; /* Angir posisjonen til footer */
-    color: white; /* Farge på teksten i footer */
-    display: block; /* Viser footer som et blokk-element */
-}
 
-/* Stil for ul-listen innenfor footer */
-footer ul {
-    padding: 0; /* Fjerner padding for ul-listen */
-    text-align: center; /* Sentrerer teksten i ul-listen */
-}
-
-/* Stil for listeelementer i footer */
-footer li {
-    display: inline-block; /* Viser listeelementer som blokk-elementer ved siden av hverandre */
-    margin-right: 10px; /* Setter avstand mellom hvert listeelement */
-}
-
-/* Stil for lenker i footer */
-footer li a {
-    text-decoration: none; /* Fjerner understrek fra lenker */
-    padding: 30px; /* Legger til padding rundt lenker i footer */
-    color:#fff;
-}
 
 
 
