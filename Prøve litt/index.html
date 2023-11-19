@@ -22,6 +22,7 @@
         position: absolute; /* Angir absolutt posisjonering */
         top: 300px; /* Plasserer innholdet 500px fra bunnen av forfedrene med relativ posisjonering */
         margin: 50px auto;
+        z-index: 0;
         
            
     }.content h2 {
@@ -36,29 +37,31 @@
     }
     h3 {
         position: absolute; /* Angir absolutt posisjonering for elementet */
-        bottom: -70px; /* Plasserer elementet 100 piksler over bunnen av forfedrene med relativ posisjonering */
+        bottom: -90px; /* Plasserer elementet 100 piksler over bunnen av forfedrene med relativ posisjonering */
         font-size: 30px; /* Størrelse på teksten */
         font-weight: 500; /* Angir vekten (tykkelsen) på teksten */
-        top: 80px;
         margin-left: 20px;
     }
     #btn {
         padding: 1rem 2.5rem; /* Angir padding (polstring) for knappelementet */
         font-size: 1rem; /* Størrelse på teksten */
         border: none; /* Fjerner kantlinjen rundt elementet */
-        color: #00FF00; /* Angir teksten til hvit farge */
+        color: #FFF; /* Angir teksten til hvit farge */
         background: #000; /* Angir bakgrunnsfargen til svart */
         cursor: pointer; /* Endrer musemarkøren til en hånd når det er over elementet */
         border-radius: 50px; /* Gir elementet avrundede hjørner */ 
         position: absolute; /* Angir absolutt posisjonering for elementet */
-        top: 60%; /* Plasserer elementet 8% fra bunnen av forfedrene med relativ posisjonering */
+        top:220px; /* Plasserer elementet 60% fra toppen av forfedrene med relativ posisjonering */
         margin-left: 20px;
     }
     #txt{
-        position: fixed;
-        top: 500px;
+        position: absolute;
+        top:150px;
         font-size: 20px;
         max-width: 400px;
+    }
+    .topnav{
+        z-index: 1;
     }
     .content h2:nth-child(1) {
         -webkit-text-stroke: 2px #FFF; /* Legger til en kantlinje rundt teksten */
@@ -71,12 +74,12 @@
             margin: 50px auto; /* Sentrerer header-elementet i forhold til bredden på skjermen */
             top: 300px;
         }
-    .content h2 {
-        transform: translate(-52%, -50%); /* Stiller på overskriftene både horisontalt og vertikalt */
-    }
-    p,h3{
-        margin-left: 0;
-    }
+        .content h2 {
+            transform: translate(-52%, -50%); /* Stiller på overskriftene både horisontalt og vertikalt */
+        }
+        p,h3,#btn{
+            margin-left: 0;
+        }
     }
     /* Stil for nettbrettvisning */
     @media (min-width: 768px) and (max-width: 1023px) {
@@ -89,9 +92,10 @@
         .content h2 {
             transform: translate(-58%, -50%); /* Stiller på overskriftene både horisontalt og vertikalt */
         }
-        p, h3{
+        p, h3, #btn{
             margin-left: 0;
         }
+        
     }
     </style>
 </head>
@@ -100,7 +104,7 @@
     
     <nav class="topnav" id="myTopnav"> <!-- Navigasjonsmeny med class 'topnav' og ID 'myTopnav' -->
         <ul> <!-- Uordnet liste -->
-            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li> <!-- Liste-element med et ikon for responsivt menyvalg -->
+            <li><a href="javascript:void(0);" style="font-size:60px;" class="icon" onclick="myFunction()">&#9776;</a></li> <!-- Liste-element med et ikon for responsivt menyvalg -->
             <li><a href="index.html" class="active">Hjem</a></li> <!-- Liste-element med lenke til 'index.html' og klassen 'active' -->
             <!-- Nedtrekksmeny for 'Prosjektledelse og prosjektarbeid' -->
             <li><a href="prosjektledelse-prosjektarbeid.html">Prosjektledelse og prosjektarbeid</a></li>
@@ -139,12 +143,13 @@
         </div> <!-- Avslutning av 'content'-diven -->
         <h3>SEMESTEROPPGAVE GRUPPE 1</h3>
         <p id="txt">Velkommen til gruppe 1 sin semesteroppgave. På vår nettside kan du lese om web og systemutvikling</p>
+        <form style="display: flex;" action="prosjektledelse-prosjektarbeid.html" method="get"> <!-- Skjema for 'Les mer her!'-knappen -->
+            <button id="btn"> Trykk her for å starte lesingen! </button> <!-- Knapp innenfor skjemaet -->
+        </form>
         </header>
     
 
-    <form style="display: inline;" action="prosjektledelse-prosjektarbeid.html" method="get"> <!-- Skjema for 'Les mer her!'-knappen -->
-        <button id="btn"> Trykk her for å starte lesingen! </button> <!-- Knapp innenfor skjemaet -->
-    </form>
+    
 
     <footer> <!-- Åpningstag for dokumentets bunntekst -->
         <ul> <!-- Uordnet liste -->

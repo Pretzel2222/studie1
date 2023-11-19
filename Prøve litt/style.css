@@ -20,10 +20,6 @@ body {
 header, .main-content, .topnav {
     border-radius: 5px; /* Runde hjørner på disse elementene */
 }
-h2{
-    line-height: 2em;
-    
-}
 header {
     color: #fff; /* Tekstfargen for header */
     padding: 0px; /* Innpadding for header */
@@ -100,7 +96,7 @@ header {
 
 .topnav {
     overflow: hidden; /* Skjuler innhold som er større enn parent container */
-    background-color: red; /* Bakgrunnsfarge for navigasjonsmeny */
+    background-color: #777; /* Bakgrunnsfarge for navigasjonsmeny */
     list-style: none; /* Fjerner punktmarkeringer fra listen */
 }
 
